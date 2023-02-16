@@ -38,6 +38,7 @@ body {
 .tabs button:active{
     text-decoration:underline;
     text-decoration: solid;
+    color: white;
     background-color: darkblue;
 }
 
