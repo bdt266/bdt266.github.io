@@ -28,10 +28,17 @@ body {
     padding: 20px 20px 20px;
     font-family:'Times New Roman', Times, serif;
     text-align: center;
-    color: rgb(252, 248, 251);
+    color: black;
     font-size: 14pt;
     background-color: ##FCD0A1;
     border-radius: 20px 50px 15px 3px;
+}
+
+
+.tabs button:active{
+    text-decoration:underline;
+    text-decoration: solid;
+    background-color: darkblue;
 }
 
 #FAQ {
