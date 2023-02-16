@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link id="csslink" rel="stylesheet" href="uno.css">
+    <script>
+        function toggleCSS() {
+            // Obtains the <link> element that links to the css (by using its id).
+            var currentCSS = document.getElementById('csslink');
+
+            // Change the value of href attribute to change the css file.
+            if (currentCSS.getAttribute('href') == 'uno.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+            } else {
+                currentCSS.setAttribute('href', 'uno.css');
+            }
+        }
+    </script>
+</head>
+<header>
+    <h1 style="text-decoration:none">Sparrow's Commissions</h1>
+</header>
+<style>
+    .tabs {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body class="FAQ">
+    <ul class="tabs">
+        <button onclick="toggleCSS()">Switch Style</button>
+        <li><a href="index.html"><button>COMMISSIONS</button></a></li>
+        <li><a href="FAQ.html"><button>FAQ</button></a></li>
+    </ul>
+    <div class="insideBody">
+        <h1> TERMS OF SERVICE </h1>
+        <p class="indentText">By commissioning Sparrow, the client indicates that they have read, understood, and
+            consented to these terms
+            of
+            service.</p>
+        <p class="indentText">Please do not violate these terms, if the client is found to violate these terms, they
+            will be blacklisted
+            and
+            their name will be mentioned in a public announcement regarding the violation.</p>
+
+        <br>
+        <div>
+            <h2> General Terms </h2>
+        </div>
+        <ul id="FAQ">
+            <li>Commissions are digital, nothing physical will be shipped</li>
+            <li>Under no circumstances do I permit my work to be used in markets that make use of blockchain technology.
+                <ul>
+                    <li>This includes any form of cryptocurrency (such as Bitcoin or Litecoin) and non-fungible tokens
+                        (NFTs).</li>
+                </ul>
+            </li>
+            <li>Please give me a clear image reference of your OC, character, or poses you want </li>
+            <li>Please do not redistrubute or resell my commission. All commissions are for personal use (social media)
+            </li>
+            <li>I will not draw anything I am uncomfortable with, see <a href=#FAQ>FAQ</a>.</li>
+        </ul>
+        <br>
+
+        <div>
+            <h2> Payment </h2>
+        </div>
+        <ul id="FAQ">
+            <li>All pricing are in USD</li>
+            <li>All payments must be sent after the sketch process if you want me to continue </li>
+            <li>Payments can be made through paypal, venmo, or ko-fi.</li>
+            <li><strong>If the commission is already finished, there can be no refund </strong>. If the commission is
+                underway, there is a 5% cancellation fee.</li>
+        </ul>
+
+        <br>
+        <div>
+            <h2> What I will and Won't Draw </h2>
+        </div>
+        <ul id="FAQ">
+            <li>I will not draw:</li>
+            <ul class="notDraw"> <!-- Put X here for bullet points-->
+                <li>Full NSFW</li>
+                <li>Ships that make me uncomfortable</li>
+                <li>Furries</li>
+                <li>Mecha</li>
+                <li>Any design that I deem too complex</li>
+            </ul>
+            <li>I will draw:</li>
+            <ul class="draw"> <!-- Put checkmarks-->
+                <li>Ocs</li>
+                <li>Fanart</li>
+                <li>Self-Ships</li>
+                <li>Oc x Canon</li>
+                <li>Slight NSFW</li>
+                <li>Slight Gore</li>
+            </ul>
+        </ul>
+        <br>
+        <div><a id=#FAQ>
+                <h2> FAQ </h2>
+            </a> </div>
+        <!-- For the questions, do a darker different color-->
+        <p class="questions"> How long will it take? </p>
+        <p class="answers"> Depending on my workload, it might take up to 2 weeks. If you need it urgently, you must
+            communicate
+            that.
+        </p>
+        <p class="questions"> </p>
+        <p class="answers"> </p>
+        <p class="questions"> </p>
+        <p class="questions"> </p>
+        <div class="indentText"> CONTACTS </div>
+        <a href="https://www.instagram.com/sparrowfleet/" class="fa fa-instagram" style="margin-left:35px;"></a>
+        <a href="https://www.venmo.com/u/sparrowfleet" class="fa fa-vimeo"></a>
+        <a href="https://www.etsy.com/listing/1332304103/sparrows-art-commissions-custom-anime?click_key=4515cbde8b7fd4c34634c9b2a7cc200f95e981eb%3A1332304103&click_sum=7d3a816b&ref=shop_home_feat_1&frs=1"
+            class="fa fa-etsy"></a>
+    </div>
+</body>
+<footer>
+    <p>&#169 <em><strong>2023 Dalyla Nguyen & Brian Tran</strong></em></p>
+</footer>
+
+</html>

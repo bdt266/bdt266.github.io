@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sparrow's Commissions</title>
+    <link id="csslink" rel="stylesheet" href="uno.css">
+    <script>
+        function toggleCSS() {
+            // Obtains the <link> element that links to the css (by using its id).
+            var currentCSS = document.getElementById('csslink');
+
+            // Change the value of href attribute to change the css file.
+            if (currentCSS.getAttribute('href') == 'uno.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+            } else {
+                currentCSS.setAttribute('href', 'uno.css');
+            }
+        }
+    </script>
+</head>
+<header>
+    <h1> SPARROW'S COMMISSIONS </h1>
+</header>
+<style>
+    .tabs {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+    <ul class="tabs">
+        <!-- The current # are temp, faq will lead into different html that sparrow creates-->
+        <button onclick="toggleCSS()">Switch Style</button>
+        <li><a href="index.html"><button>COMMISSIONS</button></a></li>
+        <li><a href="FAQ.html"><button>FAQ</button></a></li>
+    </ul>
+    <div class="insideBody">
+        <img src="sparrow banner.jfif" alt="Sparrow commission banner" style="display:block; margin:auto; width:100%;">
+        <br>
+        <div style="display:grid; grid-template-columns:auto auto; justify-content:center">
+            <img src="1.jpg" alt="Example Picture of where art cuts off" height="400px">
+            <!-- Table Prices -->
+            <table id="prices">
+                <tr>
+                    <th colspan="4" style="border:none">PRICES</th>
+                </tr>
+                <tr>
+                    <th style="border:none"></th>
+                    <th>BUST</th>
+                    <th>HALF-BODY</th>
+                    <th>FULL-BODY</th>
+                </tr>
+                <tr>
+                    <th>SIMPLE</th>
+                    <td>$15</td>
+                    <td>$25</td>
+                    <td>$35</td>
+                </tr>
+                <tr>
+                    <th>RENDERED</th>
+                    <td>$20</td>
+                    <td>$35</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <th>CHIBI</th>
+                    <td>$5</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Extra Characters are 50% + the price</td>
+                </tr>
+
+
+            </table>
+            <p>All commissions come with a simple background!</p>
+        </div>
+        <div style="text-align:center; font-size:5em;"> EXAMPLES </div>
+        <div style="display:flex; justify-content:center;">
+            <img src="5.jpg" alt="example picture 5" height="240px">
+            <img src="6.png" alt="example picture 6" height="240px">
+            <img src="7.png" alt="example picture 7" height="240px">
+        </div>
+        <div style="display:flex; justify-content:center;">
+            <img src="2.png" alt="example picture 2" height="240px">
+            <img src="3.png" alt="example picture 3" height="240px">
+            <img src="4.png" alt="example picture 4" height="240px">
+        </div>
+        <div style="display:flex; justify-content:center;">
+            <img src="8.png" alt="example picture 8" height="240px">
+            <img src="9.jpg" alt="example picture 9" height="240px">
+            <img src="10.png" alt="example picture 10" height="240px">
+        </div>
+    </div>
+</body>
+<footer>
+    <p>&#169 <em><strong>2023 Dalyla Nguyen & Brian Tran</strong></em></p>
+</footer>
+
+</html>

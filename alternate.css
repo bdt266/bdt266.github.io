@@ -1,0 +1,124 @@
+body {
+    background-color:#251F47;
+    font-family:'Times New Roman', Times, serif;
+    padding:50px;
+    color:white;
+    animation-name:enhance;
+    animation-duration:2s;
+    text-align:center;
+    justify-content:center;
+}
+@font-face {
+    font-family: fancyFont;
+    src: url(MotleyForcesRegular-w1rZ3.ttf);
+}
+
+@keyframes enhance {
+    from {opacity: 0; background-color:#FCD0A1}
+    to {opacity: 1; background-color:#251F47}
+}
+
+.tabs {
+    display:flex;
+    justify-content:right;
+    gap:5px;
+}
+
+.tabs button {
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius:0;
+}
+
+#FAQ {
+    list-style-type:"\25C6";
+    text-align:left;
+}
+#FAQ li ul li {
+    list-style-type:"\25C7";
+}
+.notDraw {
+    list-style-type:"X ";
+}
+.draw {
+    list-style-type:"✔ ";
+}
+
+h1 {
+    text-align:center;
+}
+
+.insideBody {
+    border: 10px solid white;
+}
+
+#prices {
+    text-align:center;
+    margin-left:20px;
+}
+
+#prices th {
+    border:2px solid white;
+    width: 100px;
+}
+
+.indentText {
+    margin-left:20px;
+}
+
+.questions {
+    margin-left:20px;
+    font-style:italic;
+    font-weight:bold;   
+}
+.questions::before {
+    content:"Q:"
+}
+
+.answers {
+    margin-left:20px;
+    font-weight:lighter;
+}
+
+.answers::before {
+    content:"A:";
+    font-weight:bold;  
+}
+
+.FAQ h1, h2{
+    text-decoration:underline;
+    text-align:center;
+    justify-content:center;
+}
+
+.fa {
+    margin-top: 10px;
+    margin-right:5px;
+    margin-bottom:10px;
+    font-size: 20px;
+    width: 20px;
+    text-decoration: none;
+    color:lightblue;
+}
+
+.fa:visited {
+    color: violet;
+}
+.fa:active {
+    color:red;
+}
+
+a {
+    color:lightblue;
+}
+
+a:visited {
+    color:violet;
+}
+
+img {
+    margin:10px;
+}
+
+/*put table to right of headshot image, borders, for many images do 3 2 3 cols, replace bullets with stars and center FAQ, big tabs for commissions + FAQ */
+/*table will have diff color cells: light data, dark headers*/
