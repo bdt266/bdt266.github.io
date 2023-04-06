@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sparrow's Commissions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleCSS() {
+            // Obtains the <link> element that links to the css (by using its id).
+            var currentCSS = document.getElementById('csslink');
+
+            // Change the value of href attribute to change the css file.
+            if (currentCSS.getAttribute('href') == 'uno.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+            } else {
+                currentCSS.setAttribute('href', 'uno.css');
+            }
+        }
+    </script>
+</head>
+<style>
+    .navbar {
+        background-color: #eb9457;
+
+    }
+
+    .tabs {
+        justify-content: center;
+    }
+
+    .tabs button {
+        font-size: 40pt;
+        padding: 0px;
+        border-radius: 0px;
+        width: 50vw;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    ul.tabs {
+        justify-content: space-between;
+        display: block;
+        text-align: left;
+        list-style-type: none;
+        background-color: #FCD0A1;
+    }
+
+    p {
+        padding: 5vw;
+        font-size: 40px;
+        text-align: left;
+    }
+
+    body {
+        background-color: #FCD0A1;
+    }
+
+    .nav-link dropdown-toggle {
+        font-size: 40px;
+    }
+
+    .dropdown-item {
+        font-size: 40px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50pt;
+
+    }
+
+    @media screen and (max-width: 500px) {
+
+        .tabs button {
+            font-size: 20pt;
+        }
+
+
+        .insideBody {
+            border-radius: 0;
+        }
+
+        .nav-link dropdown-toggle {
+            font-size: 20px;
+        }
+
+        .dropdown-item {
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size:40pt;
+        }
+
+        table {
+            font-size:20pt;
+        }
+
+        p {
+            font-size:20px;
+        }
+    }
+
+
+    .carousel-control-prev {
+        background-color: gray;
+    }
+
+    .carousel-control-next {
+        background-color: gray;
+    }
+
+
+    .dropdown-menu {
+        justify-content: center;
+    }
+</style>
+<header>
+    <h1> SPARROW'S COMMISSIONS </h1>
+</header>
+
+
+<nav class="navbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+<div class="collapse" id="navbarToggleExternalContent">
+    <ul class="tabs">
+        <!-- The current # are temp, faq will lead into different html that sparrow creates-->
+        <li><button onclick="toggleCSS()">Switch Style</button></li>
+        <li><a href="index.html"><button>COMMISSIONS</button></a></li>
+        <li><a href="FAQ.html"><button>FAQ</button></a></li>
+        <li><a href="WithBootStrap.html"><button>BOOTSTRAP</button></a></li>
+        <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" href="WithBootStrap.html" role="button" data-bs-toggle="dropdown"
+                style="font-size: 40px; justify-content: center;">Socials</button>
+            <ul class="dropdown-menu" style="column-width: auto;">
+                <li><a class="dropdown-item" href="https://twitter.com/DoodlesFleet">Twitter</a></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/sparrowfleet/">Instagram</a></li>
+                <li><a class="dropdown-item" href="https://www.etsy.com/shop/SparrowWitchCrafts">Etsy</a></li>
+            </ul>
+</div>
+
+<nav>
+</nav>
+
+<body>
+    <div class="insideBody">
+        <img src="sparrow banner.jpg" alt="Sparrow commission banner" style="display:block; margin:auto; width:100%;">
+        <br>
+        <div style="justify-content:center; font-size: 40pt;">
+            <img src="1.jpg" alt="Example Picture of where art cuts off" class="img-fluid"
+                style="height:33%; display:block; margin: auto;">
+            <!-- Table Prices -->
+            <table class="table table-hover rounded rounded-3 table-responsive-sm table-striped" id="prices">
+                <tr>
+                    <th colspan="4" style="border:none; text-align:center">PRICES</th>
+                </tr>
+                <tr>
+                    <th style="border:none"></th>
+                    <th>BUST</th>
+                    <th>HALF-BODY</th>
+                    <th>FULL-BODY</th>
+                </tr>
+                <tr>
+                    <th>SIMPLE</th>
+                    <td>$15</td>
+                    <td>$25</td>
+                    <td>$35</td>
+                </tr>
+                <tr>
+                    <th>RENDERED</th>
+                    <td>$20</td>
+                    <td>$35</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <th>CHIBI</th>
+                    <td>$5</td>
+                    <td>$10</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4">Extra Characters are 50% + the price</td>
+                </tr>
+
+
+            </table>
+            <div style="justify-content: center; padding:1vw">All commissions come with a simple background!</div>
+        </div>
+        <div style="text-align:center; font-size:5em;"> EXAMPLES </div>
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row w-auto">
+                        <img src="5.jpg" alt="example picture 5" class="col m-1 w-100">
+                        <img src="6.png" alt="example picture 6" class="col m-1 w-100">
+                        <img src="7.png" alt="example picture 7" class="col m-1 w-100">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row w-auto">
+                        <img src="2.png" alt="example picture 2" class="col m-1 w-100">
+                        <img src="3.png" alt="example picture 3" class="col m-1 w-100">
+                        <img src="4.png" alt="example picture 4" class="col m-1 w-100">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row w-auto">
+                        <img src="8.png" alt="example picture 8" class="col m-1 w-100">
+                        <img src="9.jpg" alt="example picture 9" class="col m-1 w-100">
+                        <img src="10.png" alt="example picture 10" class="col m-1 w-100">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <p>&#169 <em><strong>2023 Dalyla Nguyen & Brian Tran</strong></em></p>
+</footer>
+
+</html>
